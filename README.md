@@ -16,7 +16,15 @@ Windows
 
 default
 -------
-Installs BeyondCompare from Scooter Software.
+Installs BeyondCompare from Scooter Software and configures git to use bc3 as the diff and merge tool.
+
+install
+-------
+Installs BeyondCompare from Scooter Software
+
+gitconfig
+---------
+Configures git to use BeyondCompare is the diff and merge tool. 
 
 # Author
 

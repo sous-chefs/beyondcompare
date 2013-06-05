@@ -1,7 +1,7 @@
 #
 # Author:: Shawn Neal (<sneal@daptiv.com>)
 # Cookbook Name:: beyondcompare
-# Recipe:: default
+# Recipe:: gitconfig
 #
 # Copyright:: Copyright (c) 2013 Daptiv Solutions LLC.
 #
@@ -18,5 +18,22 @@
 # limitations under the License.
 #
 
-include_recipe 'beyondcompare::install'
-include_recipe 'beyondcompare::gitconfig'
+git_exe = node['beyondcompare']['git_exe']
+bc3_exe = node['beyondcompare']['bcompare_exe']
+
+git_config_cmds = [
+  "\"#{git_exe}\" config --global push.default simple",
+  "\"#{git_exe}\" config --global core.autocrlf true",
+  "\"#{git_exe}\" config --global difftool.prompt false",
+  "\"#{git_exe}\" config --global merge.tool bc3",
+  "\"#{git_exe}\" config --global mergetool.bc3.path \"#{bc3_exe}\"",
+  "\"#{git_exe}\" config --global diff.tool bc3",
+  "\"#{git_exe}\" config --global difftool.bc3.path \"#{bc3_exe}\""
+]
+
+git_config_cmds.each do |cmd|
+  execute "configure_git_#{cmd}" do
+    command cmd
+    only_if { File.exists?(git_exe) }
+  end
+end

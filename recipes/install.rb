@@ -1,7 +1,7 @@
 #
 # Author:: Shawn Neal (<sneal@daptiv.com>)
 # Cookbook Name:: beyondcompare
-# Recipe:: default
+# Recipe:: install
 #
 # Copyright:: Copyright (c) 2013 Daptiv Solutions LLC.
 #
@@ -18,5 +18,14 @@
 # limitations under the License.
 #
 
-include_recipe 'beyondcompare::install'
-include_recipe 'beyondcompare::gitconfig'
+version        = node['beyondcompare']['version']
+package_name   = node['beyondcompare'][version]['package_name']
+checksum       = node['beyondcompare'][version]['checksum']
+url            = "#{node['beyondcompare']['base_url']}/BCompare-#{version}.exe"
+
+windows_package package_name do
+  source url
+  checksum checksum
+  installer_type :inno
+  action :install
+end
