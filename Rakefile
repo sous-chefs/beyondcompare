@@ -4,8 +4,12 @@ require 'daptiv-chef-ci/vagrant_task'
 
 @provider = (ENV['PROVIDER'] || :virtualbox).to_sym
 
-desc 'Lint Chef cookbooks and check style'
-task :default => [:tailor, :foodcritic]
+task :lint => [:build_number, :tailor, :foodcritic]
+task :default => [:lint]
+
+task :build_number do
+  IO.write('version.txt', (ENV['BUILD_NUMBER'] ? "0.0.#{ENV['BUILD_NUMBER']}" : '0.0.1'))
+end
 
 FoodCritic::Rake::LintTask.new do |t|
   t.options = {

@@ -10,4 +10,4 @@
 # Bundler
 bin/*
 .bundle/*
-
+version.txt
