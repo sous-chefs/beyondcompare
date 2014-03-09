@@ -1,5 +1,4 @@
 require 'minitest/spec'
-require 'mixlib/shellout'
 
 class TestBeyondCompareInstall < MiniTest::Chef::Spec
   describe 'install BC3' do
