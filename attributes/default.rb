@@ -11,4 +11,4 @@ default['beyondcompare']['bcompare_exe'] =
 
 default['beyondcompare']['git_exe'] =
   ::File.join('c:', 'Program Files (x86)', 'Git', 'bin', 'git.exe')
-  
+
