@@ -5,5 +5,10 @@ Vagrant.configure('2') do |config|
     chef.add_recipe 'beyondcompare'
     chef.add_recipe 'minitest-handler'
     chef.file_cache_path = 'c:/var/chef/cache' # Need leading drive letter
+    chef.json = {
+      "beyondcompare" => {
+        "base_url" => 'http://vagrantboxes.hq.daptiv.com/installs/cookbookresources'
+      }
+    }
   end
 end
