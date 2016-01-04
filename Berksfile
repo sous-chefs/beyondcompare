@@ -1,4 +1,4 @@
-source 'https://supermarket.chef.io'
+source 'http://berkshelfapi.daptiv.com'
 
 metadata
 cookbook 'minitest-handler'

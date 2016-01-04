@@ -1,0 +1,29 @@
+---
+driver:
+  name: vagrant
+  provider: virtualbox
+
+provisioner:
+  name: chef_zero
+  environments_path: test/environments
+  client_rb:
+    environment: cookbook_ci
+
+platforms:
+  - name: windows2012r2_chef12
+    driver:
+      box_url: 'http://artrepo.daptiv.com:8081/artifactory/vagrant-local/virtualbox_windows-2012r2_chef-12.5.1_1.0.23.box'
+    driver_config:
+      communicator: winrm
+    transport:
+      name: winrm
+
+suites:
+  - name: default
+    data_bags_path: <%= ENV['CHEF_DATA_BAGS'] %>
+    encrypted_data_bag_secret_key_path: <%= ENV['CHEF_SECRET_FILE'] %>
+    run_list:
+      - recipe[beyondcompare]
+    attributes:
+      beyondcompare:
+        base_url: 'http://vagrantboxes.hq.daptiv.com/installs/cookbookresources'
