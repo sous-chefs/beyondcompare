@@ -34,6 +34,6 @@ git_config_cmds = [
 git_config_cmds.each do |cmd|
   execute "configure_git_#{cmd}" do
     command cmd
-    only_if { File.exists?(git_exe) }
+    only_if { File.exist?(git_exe) }
   end
 end

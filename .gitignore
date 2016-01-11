@@ -6,9 +6,12 @@
 .*.sw[a-z]
 *.un~
 /cookbooks
-Berksfile.lock
+version.txt
 
 # Bundler
 bin/*
 .bundle/*
-version.txt
+
+# Kitchen
+.kitchen/*
+Berksfile.lock
