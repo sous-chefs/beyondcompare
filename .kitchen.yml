@@ -12,7 +12,7 @@ provisioner:
 platforms:
   - name: windows2012r2_chef12
     driver:
-      box_url: 'http://artrepo.daptiv.com:8081/artifactory/vagrant-local/virtualbox_windows-2012r2_chef-12.5.1_1.0.23.box'
+      box_url: <%= ENV['WINDOWS_BOX_URL'] %>
     driver_config:
       communicator: winrm
     transport:
@@ -26,4 +26,4 @@ suites:
       - recipe[beyondcompare]
     attributes:
       beyondcompare:
-        base_url: 'http://vagrantboxes.hq.daptiv.com/installs/cookbookresources'
+        base_url: <%= ENV['BEYONDCOMPARE_DOWNLOAD_URL'] %>
