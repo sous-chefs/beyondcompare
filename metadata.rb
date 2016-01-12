@@ -1,6 +1,6 @@
 name 'beyondcompare'
-maintainer 'Daptiv Solutions, LLC'
-maintainer_email 'sneal@daptiv.com'
+maintainer 'Changepoint'
+maintainer_email 'dl_teamengineering@daptiv.com'
 license 'All rights reserved'
 description 'Installs/Configures Beyond Compare'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
