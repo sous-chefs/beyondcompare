@@ -1,4 +1,4 @@
-source 'http://artrepo.daptiv.com:8081/artifactory/api/gems/rubygems-virtual/'
+source 'http://rubygems.org'
 
 gem 'chefspec'
 gem 'rspec'
