@@ -1,3 +1,4 @@
+[![Cookbook Version](http://img.shields.io/cookbook/v/beyondcompare.svg)](https://supermarket.chef.io/cookbooks/beyondcompare)
 [![Build Status](https://secure.travis-ci.org/daptiv/beyondcompare.png)](http://travis-ci.org/daptiv/beyondcompare)
 
 # beyondcompare cookbook
