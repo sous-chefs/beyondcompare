@@ -2,8 +2,8 @@ require 'minitest/spec'
 
 # BeyondCompare test class
 class TestBeyondCompareInstall < MiniTest::Chef::Spec
-  describe 'install BC3' do
-    it 'should install bc3.exe' do
+  describe 'installer' do
+    it 'should install Beyond Compare' do
       assert File.exist?(node['beyondcompare']['bcompare_exe'])
     end
   end

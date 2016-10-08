@@ -1,9 +1,10 @@
 #
-# Author:: Shawn Neal (<sneal@daptiv.com>)
+# Author:: Shawn Neal (<sneal@sneal.net>)
 # Cookbook Name:: beyondcompare
 # Recipe:: install
 #
 # Copyright:: Copyright (c) 2013 Daptiv Solutions LLC.
+# Copyright:: Copyright (c) 2016 Shawn Neal
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,14 +19,10 @@
 # limitations under the License.
 #
 
-version        = node['beyondcompare']['version']
-package_name   = node['beyondcompare'][version]['package_name']
-checksum       = node['beyondcompare'][version]['checksum']
-url            = "#{node['beyondcompare']['base_url']}/BCompare-#{version}.exe"
-
-windows_package package_name do
+url = ::File.join(node['beyondcompare']['source'], "BCompare-#{node['beyondcompare']['version']}.exe")
+windows_package node['beyondcompare']['package_name'] do
   source url
-  checksum checksum
+  checksum node['beyondcompare']['checksum']
   installer_type :inno
   action :install
 end
