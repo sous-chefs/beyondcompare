@@ -1,7 +1,7 @@
 [![Cookbook Version](http://img.shields.io/cookbook/v/beyondcompare.svg)](https://supermarket.chef.io/cookbooks/beyondcompare)
-[![Build Status](https://secure.travis-ci.org/daptiv/beyondcompare.png)](http://travis-ci.org/daptiv/beyondcompare)
+[![Build status](https://ci.appveyor.com/api/projects/status/2apr5hmr7oq7uurk/branch/master?svg=true)](https://ci.appveyor.com/project/ChefWindowsCookbooks65871/beyondcompare/branch/master)
 
-# beyondcompare cookbook
+# Beyond Compare Cookbook
 
 Installs BeyondCompare
 
@@ -9,11 +9,9 @@ Installs BeyondCompare
 
 Windows
 
-## Usage
+# Usage
 
-### beyondcompare::default
-
-Include `beyondcompare` in your node's `run_list`:
+Include `beyondcompare::default` in your node's `run_list`:
 
 ```json
 {
@@ -23,21 +21,25 @@ Include `beyondcompare` in your node's `run_list`:
 }
 ```
 
-## Attributes
+# Attributes
 
-* `['beyondcompare']['version']` - The version of BC to install, defaults to '3.3.10.17762'. If you change this you should also change the package_name and checksum (SHA-256) attributes.
+## Optional
 
-## Recipes
+* `['beyondcompare']['version']` - The version of BC to install, defaults to '4.1.9'. If you change this you should also change the package_name and checksum attributes.
+* `['beyondcompare']['package_name']` - The package name as displayed in Add/Remove programs. Defaults to `Beyond Compare 4.1.9`.
+* `['beyondcompare']['checksum']` - The installer SHA256 checksum.
 
-### default
-Installs BeyondCompare from Scooter Software and configures git to use bc3 as the diff and merge tool.
+# Recipes
 
-### install
+## default
+Installs BeyondCompare from Scooter Software and configures git to use Beyond Compare as the diff and merge tool.
+
+## install
 Installs BeyondCompare from Scooter Software
 
-### gitconfig
+## gitconfig
 Configures git to use BeyondCompare is the diff and merge tool.
 
-## Author
+# Author
 
 Author:: Shawn Neal
