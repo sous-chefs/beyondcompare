@@ -5,7 +5,7 @@ This file is used to list changes made in each version of beyondcompare.
 ## 1.0.0:
 - SuperMarket release for BeyondCompare 4.1.9
 
-## 0.0.10:
+## 0.0.1:
 - Initial SuperMarket release for BeyondCompare 3.3.10
 
 
