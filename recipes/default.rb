@@ -1,9 +1,10 @@
 #
-# Author:: Shawn Neal (<sneal@daptiv.com>)
+# Author:: Shawn Neal (<sneal@sneal.net>)
 # Cookbook Name:: beyondcompare
 # Recipe:: default
 #
 # Copyright:: Copyright (c) 2013 Daptiv Solutions LLC.
+# Copyright:: Copyright (c) 2016 Shawn Neal
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

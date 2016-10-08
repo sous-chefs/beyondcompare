@@ -1,9 +1,10 @@
 #
-# Author:: Shawn Neal (<sneal@daptiv.com>)
+# Author:: Shawn Neal (<sneal@sneal.net>)
 # Cookbook Name:: beyondcompare
 # Recipe:: gitconfig
 #
 # Copyright:: Copyright (c) 2013 Daptiv Solutions LLC.
+# Copyright:: Copyright (c) 2016 Shawn Neal
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,16 +20,16 @@
 #
 
 git_exe = node['beyondcompare']['git_exe']
-bc3_exe = node['beyondcompare']['bcompare_exe']
+bc_exe = node['beyondcompare']['bcompare_exe']
 
 git_config_cmds = [
   "\"#{git_exe}\" config --global push.default simple",
   "\"#{git_exe}\" config --global core.autocrlf true",
   "\"#{git_exe}\" config --global difftool.prompt false",
-  "\"#{git_exe}\" config --global merge.tool bc3",
-  "\"#{git_exe}\" config --global mergetool.bc3.path \"#{bc3_exe}\"",
-  "\"#{git_exe}\" config --global diff.tool bc3",
-  "\"#{git_exe}\" config --global difftool.bc3.path \"#{bc3_exe}\""
+  "\"#{git_exe}\" config --global merge.tool bc",
+  "\"#{git_exe}\" config --global mergetool.bc.path \"#{bc_exe}\"",
+  "\"#{git_exe}\" config --global diff.tool bc",
+  "\"#{git_exe}\" config --global difftool.bc.path \"#{bc_exe}\""
 ]
 
 git_config_cmds.each do |cmd|
