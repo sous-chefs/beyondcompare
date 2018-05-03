@@ -29,7 +29,7 @@ git_config_cmds = [
   "\"#{git_exe}\" config --global merge.tool bc",
   "\"#{git_exe}\" config --global mergetool.bc.path \"#{bc_exe}\"",
   "\"#{git_exe}\" config --global diff.tool bc",
-  "\"#{git_exe}\" config --global difftool.bc.path \"#{bc_exe}\""
+  "\"#{git_exe}\" config --global difftool.bc.path \"#{bc_exe}\"",
 ]
 
 git_config_cmds.each do |cmd|
