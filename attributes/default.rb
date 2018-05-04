@@ -21,7 +21,7 @@
 default['beyondcompare']['version'] = '4.2.4.22795'
 default['beyondcompare']['source'] = 'http://www.scootersoftware.com/'
 
-default['beyondcompare']['package_name'] = 'Beyond Compare 4.2.4.22795'
+default['beyondcompare']['package_name'] = 'Beyond Compare 4.2.4'
 default['beyondcompare']['checksum'] = 'b4b2bed8e5fe16a8680ffb4f3827a892cbfecc58803cc59c70bc66e60a92e291'
 
 default['beyondcompare']['bcompare_exe'] =
