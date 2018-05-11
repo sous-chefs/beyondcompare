@@ -2,14 +2,20 @@
 
 This file is used to list changes made in each version of beyondcompare.
 
-## 1.0.0:
-- SuperMarket release for BeyondCompare 4.1.9
+## 2.0.0
 
-## 0.0.1:
-- Initial SuperMarket release for BeyondCompare 3.3.10
+* Support Chef 13, drop support for Chef 12.
+* Upgrade to Beyond Compare 4.2.4.
+* Standardize testing environment across repos.  (AppVeyor, Kitchen, Rake, etc.)
+* Upgrade development dependencies.
 
+## 1.0.0
 
-- - - 
-Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
+* SuperMarket release for BeyondCompare 4.1.9
 
-The [Github Flavored Markdown page](http://github.github.com/github-flavored-markdown/) describes the differences between markdown on github and standard markdown.
+## 0.0.1
+
+* Initial SuperMarket release for BeyondCompare 3.3.10
+
+- - -
+Refer to the [Markdown Syntax Guide](https://daringfireball.net/projects/markdown/syntax) for help with standard Markdown, and [Writing on GitHub](https://help.github.com/categories/writing-on-github/) for help with the GitHub dialect of Markdown.
