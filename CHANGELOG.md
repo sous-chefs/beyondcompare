@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of beyondcompare.
 
+## 2.0.1
+
+* Upgrade BeyondCompare to 4.2.7
+
 ## 2.0.0
 
 * Support Chef 13, drop support for Chef 12.
