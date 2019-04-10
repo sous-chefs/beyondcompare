@@ -18,11 +18,11 @@
 # limitations under the License.
 #
 
-default['beyondcompare']['version'] = '4.2.7.23425'
+default['beyondcompare']['version'] = '4.2.9.23626'
 default['beyondcompare']['source'] = 'http://www.scootersoftware.com/'
 
-default['beyondcompare']['package_name'] = 'Beyond Compare 4.2.7'
-default['beyondcompare']['checksum'] = 'a3b45191a25505de429d25bd354a8fbd259693c6b0b0b778c898c0e1c1f685af'
+default['beyondcompare']['package_name'] = 'Beyond Compare 4.2.9'
+default['beyondcompare']['checksum'] = '366e78cb7ffd536fbc4a42dbecb094a41a008f30439c95e760710f0ec7b1f300'
 
 default['beyondcompare']['bcompare_exe'] =
   ::File.join((ENV['ProgramFiles'] || 'C:\Program Files'), 'Beyond Compare 4', 'BCompare.exe')
