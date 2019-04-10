@@ -4,10 +4,10 @@ describe 'beyondcompare::install' do
     end.converge(described_recipe)
   end
   it 'installs Beyond Compare' do
-    expect(chef_run).to install_windows_package('Beyond Compare 4.2.7')
+    expect(chef_run).to install_windows_package('Beyond Compare 4.2.9')
       .with(
-        source: 'http://www.scootersoftware.com/BCompare-4.2.7.23425.exe',
-        checksum: 'a3b45191a25505de429d25bd354a8fbd259693c6b0b0b778c898c0e1c1f685af',
+        source: 'http://www.scootersoftware.com/BCompare-4.2.9.23626.exe',
+        checksum: '366e78cb7ffd536fbc4a42dbecb094a41a008f30439c95e760710f0ec7b1f300',
         installer_type: :inno
       )
   end
