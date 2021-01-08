@@ -1,6 +1,6 @@
 #
 # Author:: Shawn Neal (<sneal@sneal.net>)
-# Cookbook Name:: beyondcompare
+# Cookbook:: beyondcompare
 # Recipe:: install
 #
 # Copyright:: Copyright (c) 2013 Daptiv Solutions LLC.

@@ -1,6 +1,6 @@
 #
 # Author:: Shawn Neal (<sneal@sneal.net>)
-# Cookbook Name:: beyondcompare
+# Cookbook:: beyondcompare
 # Recipe:: gitconfig
 #
 # Copyright:: Copyright (c) 2013 Daptiv Solutions LLC.
@@ -35,6 +35,6 @@ git_config_cmds = [
 git_config_cmds.each do |cmd|
   execute "configure_git_#{cmd}" do
     command cmd
-    only_if { File.exist?(git_exe) }
+    only_if { ::File.exist?(git_exe) }
   end
 end
