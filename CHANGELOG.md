@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of beyondcompare.
 
+## Unreleased
+
+- Various Cookstyle fixes
+
 ## 2.0.2
 
 * Upgrade BeyondCompare to 4.2.9
