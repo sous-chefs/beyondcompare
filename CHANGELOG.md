@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of beyondcompare.
 
-## Unreleased
+## 2.0.3 - *2021-06-01*
 
 - Various Cookstyle fixes
 
