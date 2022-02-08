@@ -4,9 +4,11 @@ This file is used to list changes made in each version of beyondcompare.
 
 ## Unreleased
 
+- Remove delivery folder
+
 ## 2.0.4 - *2021-08-17*
 
-Standardise files with files in sous-chefs/repo-management
+- Standardise files with files in sous-chefs/repo-management
 
 ## 2.0.3 - *2021-06-01*
 
