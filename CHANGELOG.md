@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of beyondcompare.
 
-## Unreleased
+## 2.0.5 - *2023-02-13*
 
 - Remove delivery folder
 
