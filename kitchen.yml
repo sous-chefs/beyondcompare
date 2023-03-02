@@ -3,12 +3,6 @@ driver:
   name: vagrant
   provider: virtualbox
   gui: true
-  username: vagrant
-  password: vagrant
-  elevated: false
-  elevated_username: vagrant
-  elevated_password: vagrant
-  require_chef_omnibus: 13.8.5
 
 provisioner:
   name: chef_zero
