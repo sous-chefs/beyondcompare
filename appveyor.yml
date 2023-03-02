@@ -6,11 +6,10 @@ platform: x64
 environment:
   machine_user: vagrant
   machine_pass: vagrant
-  KITCHEN_YAML: .kitchen.appveyor.yml
+  KITCHEN_YAML: kitchen.appveyor.yml
 
 branches:
-  only:
-    - master
+  only: [main]
 
 # Do not build on tags (GitHub only)
 skip_tags: true

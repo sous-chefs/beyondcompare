@@ -4,6 +4,8 @@ This file is used to list changes made in each version of beyondcompare.
 
 ## Unreleased
 
+- Fix yaml
+
 ## 2.0.6 - *2023-03-01*
 
 - Remove mdl
