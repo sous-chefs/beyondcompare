@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of beyondcompare.
 
-## Unreleased
+## 2.0.7 - *2023-03-02*
 
 - Fix yaml
 
