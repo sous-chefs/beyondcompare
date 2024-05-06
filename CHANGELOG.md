@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of beyondcompare.
 
-## Unreleased
+## 2.0.10 - *2024-05-06*
 
 ## 2.0.9 - *2024-05-06*
 
