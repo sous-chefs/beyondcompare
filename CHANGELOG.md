@@ -6,6 +6,13 @@ This file is used to list changes made in each version of beyondcompare.
 
 Finish adoption to Sous Chefs org
 
+## 2.0.10 - *2024-05-06*
+
+## 2.0.9 - *2024-05-06*
+
+- Update metadata
+- Update standard files
+
 ## 2.0.8 - *2023-04-01*
 
 ## 2.0.7 - *2023-03-02*
