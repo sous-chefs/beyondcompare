@@ -25,7 +25,7 @@ default['beyondcompare']['package_name'] = 'Beyond Compare 4.2.9'
 default['beyondcompare']['checksum'] = '366e78cb7ffd536fbc4a42dbecb094a41a008f30439c95e760710f0ec7b1f300'
 
 default['beyondcompare']['bcompare_exe'] =
-  ::File.join((ENV['ProgramFiles'] || 'C:\Program Files'), 'Beyond Compare 4', 'BCompare.exe')
+  ::File.join(ENV['ProgramFiles'] || 'C:\Program Files', 'Beyond Compare 4', 'BCompare.exe')
 
 default['beyondcompare']['git_exe'] =
-  ::File.join((ENV['ProgramFiles'] || 'C:\Program Files'), 'Git', 'bin', 'git.exe')
+  ::File.join(ENV['ProgramFiles'] || 'C:\Program Files', 'Git', 'bin', 'git.exe')
