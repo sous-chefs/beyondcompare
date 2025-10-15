@@ -2,18 +2,10 @@
 
 This file is used to list changes made in each version of beyondcompare.
 
-## Unreleased
-
-## 2.0.11 - *2025-09-04*
-
-## 2.0.10 - *2024-05-06*
-
 ## 2.0.9 - *2024-05-06*
 
 - Update metadata
 - Update standard files
-
-## 2.0.8 - *2023-04-01*
 
 ## 2.0.7 - *2023-03-02*
 
@@ -57,6 +49,3 @@ This file is used to list changes made in each version of beyondcompare.
 ## 0.0.1
 
 - Initial SuperMarket release for BeyondCompare 3.3.10
-
-- - -
-Refer to the [Markdown Syntax Guide](https://daringfireball.net/projects/markdown/syntax) for help with standard Markdown, and [Writing on GitHub](https://help.github.com/categories/writing-on-github/) for help with the GitHub dialect of Markdown.
