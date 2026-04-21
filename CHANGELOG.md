@@ -4,11 +4,9 @@ This file is used to list changes made in each version of beyondcompare.
 
 ## [2.1.0](https://github.com/sous-chefs/beyondcompare/compare/beyondcompare-v2.0.11...beyondcompare-v2.1.0) (2025-10-15)
 
-
 ### Features
 
 * normalize scaffolding across all windowschefcookbooks repos ([8a6e208](https://github.com/sous-chefs/beyondcompare/commit/8a6e208259eb80267ed54a8f95a37b6093504fe9))
-
 
 ### Bug Fixes
 
@@ -21,48 +19,48 @@ This file is used to list changes made in each version of beyondcompare.
 
 ## 2.0.9 - *2024-05-06*
 
-- Update metadata
-- Update standard files
+* Update metadata
+* Update standard files
 
 ## 2.0.7 - *2023-03-02*
 
-- Fix yaml
+* Fix yaml
 
 ## 2.0.6 - *2023-03-01*
 
-- Remove mdl
+* Remove mdl
 
 ## 2.0.5 - *2023-02-13*
 
-- Remove delivery folder
+* Remove delivery folder
 
 ## 2.0.4 - *2021-08-17*
 
-- Standardise files with files in sous-chefs/repo-management
+* Standardise files with files in sous-chefs/repo-management
 
 ## 2.0.3 - *2021-06-01*
 
-- Various Cookstyle fixes
+* Various Cookstyle fixes
 
 ## 2.0.2
 
-- Upgrade BeyondCompare to 4.2.9
+* Upgrade BeyondCompare to 4.2.9
 
 ## 2.0.1
 
-- Upgrade BeyondCompare to 4.2.7
+* Upgrade BeyondCompare to 4.2.7
 
 ## 2.0.0
 
-- Support Chef 13, drop support for Chef 12.
-- Upgrade to Beyond Compare 4.2.4.
-- Standardize testing environment across repos.  (AppVeyor, Kitchen, Rake, etc.)
-- Upgrade development dependencies.
+* Support Chef 13, drop support for Chef 12.
+* Upgrade to Beyond Compare 4.2.4.
+* Standardize testing environment across repos.  (AppVeyor, Kitchen, Rake, etc.)
+* Upgrade development dependencies.
 
 ## 1.0.0
 
-- SuperMarket release for BeyondCompare 4.1.9
+* SuperMarket release for BeyondCompare 4.1.9
 
 ## 0.0.1
 
-- Initial SuperMarket release for BeyondCompare 3.3.10
+* Initial SuperMarket release for BeyondCompare 3.3.10
