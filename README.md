@@ -1,33 +1,46 @@
-# Beyond Compare Cookbook
+# beyondcompare Cookbook
 
-Installs BeyondCompare and optionally configures Beyond Compare as your diff tool and merge tool for git.
+The `beyondcompare` cookbook is a Windows-only custom-resource cookbook for installing Beyond Compare and wiring Git for Windows to use it as the diff and merge tool.
 
 ## Requirements
 
-Windows
+- Windows
+- Chef 15.3+
 
-## Usage
+## Resources
 
-Include the `beyondcompare::default` recipe in your run list.
+### beyondcompare_package
 
-## Attributes
+Installs or removes Beyond Compare from Scooter Software.
 
-### Optional
+```ruby
+beyondcompare_package 'default'
+```
 
-* `['beyondcompare']['version']` - The version of BC to install, defaults to '4.2.9'. If you change this you should also change the package_name and checksum attributes.
-* `['beyondcompare']['package_name']` - The package name as displayed in Add/Remove programs. Defaults to 'Beyond Compare 4.2.9'.
-* `['beyondcompare']['checksum']` - The installer SHA256 checksum.
+### beyondcompare_git_config
 
-## Recipes
+Configures Git for Windows to use Beyond Compare.
 
-### default
+```ruby
+beyondcompare_git_config 'default'
+```
 
-Installs BeyondCompare from Scooter Software and configures git to use Beyond Compare as the diff and merge tool.
+### Default workflow
 
-### install
+```ruby
+beyondcompare_package 'default'
 
-Installs BeyondCompare from Scooter Software
+beyondcompare_git_config 'default'
+```
 
-### gitconfig
+## Resource Documentation
 
-If you have git installed, this recipe configures git to use BeyondCompare is the diff and merge tool.
+- [beyondcompare_package](documentation/beyondcompare_package.md)
+- [beyondcompare_git_config](documentation/beyondcompare_git_config.md)
+- [migration guide](migration.md)
+
+## Notes
+
+- The cookbook defaults to Beyond Compare `4.4.7.28397`, the latest supported Beyond Compare 4 release published by Scooter Software as of April 21, 2026.
+- Git integration is safe when Git for Windows is absent: `beyondcompare_git_config` does not run its `git config` commands unless `git.exe` exists.
+- Vendor support and installer limitations are documented in [LIMITATIONS.md](LIMITATIONS.md).

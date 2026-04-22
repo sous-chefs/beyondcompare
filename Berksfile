@@ -1,5 +1,9 @@
+# frozen_string_literal: true
+
 source 'https://supermarket.chef.io'
 
 metadata
-cookbook 'git'
-cookbook 'minitest-handler', github: 'b-dean/minitest-handler-cookbook', branch: 'chef-13-fix'
+
+group :integration do
+  cookbook 'test', path: 'test/cookbooks/test'
+end
