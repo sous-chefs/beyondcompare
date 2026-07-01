@@ -43,4 +43,4 @@ beyondcompare_git_config 'default'
 
 - The cookbook defaults to Beyond Compare `4.4.7.28397`, the latest supported Beyond Compare 4 release published by Scooter Software as of April 21, 2026.
 - Git integration is safe when Git for Windows is absent: `beyondcompare_git_config` does not run its `git config` commands unless `git.exe` exists.
-- Vendor support and installer limitations are documented in [LIMITATIONS.md](LIMITATIONS.md).
+- Vendor support and installer limitations are documented in [AGENTS.md](AGENTS.md).
